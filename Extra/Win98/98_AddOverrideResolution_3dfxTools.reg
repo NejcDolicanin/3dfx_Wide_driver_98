@@ -1,0 +1,31 @@
+REGEDIT4
+
+;Override resolution for 3dfx Tools in glide section
+
+;Glide variable holder with default value "0"
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\GLIDE]
+"FX_GLIDE_OVERRIDE_RESOLUTION" = "0"
+
+;Folder with all entries
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\GLIDE\Glide Override resolution]
+@ = ""
+"Control" = "Combo"
+"Default" = "0"
+"List" = "Disabled,1024x768 (4:3),1280x720 (16:9),1280x800 (16:10),1280x1024 (4:3),1360x768 (16:9),1440x900 (16:10),1600x900 (16:9),1600x1200 (4:3),1680x720 (21:9),1680x1050 (16:10),1792x768 (21:9),1920x800 (21:9),1920x1080 (16:9),1920x1200 (16:10)"
+"Tweak Map" = "0,12,24,25,13,26,27,28,14,29,30,31,32,33,34"
+"Tweak Value" = "FX_GLIDE_OVERRIDE_RESOLUTION"
+"Help" = "This will force a single resolution. Experimental!!! Will not work in every game! FOV may need to be adjusted in-game."
+"Value" = "0"
+
+;For IniFile
+;HKR,Glide\"Glide Override Resolution",Control,,"Combo"
+;HKR,Glide\"Glide Override Resolution",List,,"Disabled,1024x768 (4:3),1280x720 (16:9),1280x800 (16:10),1280x1024 (4:3),1360x768 (16:9),1440x900 (16:10),1600x900 (16:9),1600x1200 (4:3),1680x720 (21:9),1680x1050 (16:10),1792x768 (21:9),1920x800 (21:9),1920x1080 (16:9),1920x1200 (16:10)"
+;HKR,Glide\"Glide Override Resolution",Value,,"0"
+;HKR,Glide\"Glide Override Resolution",Default,,"0"
+;;;HKR,Glide\"Glide Override Resolution","Tweak Value",,"FX_GLIDE_SWAPPENDINGCOUNT"
+;HKR,Glide\"Glide Override Resolution","Tweak Value",,"FX_GLIDE_OVERRIDE_RESOLUTION"
+;HKR,Glide\"Glide Override Resolution","Tweak Map",,"0,12,24,25,13,26,27,28,14,29,30,31,32,33,34"
+;;;HKR,Glide\"Glide Override Resolution","Tweak Map",,"0,1,2,3"
+;HKR,Glide\"Glide Override Resolution","Help",,"This will force a single resolution. Experimental!!! Will not work in every game! FOV may need to be adjusted in-game."
+;;;HKR,Glide,FX_GLIDE_SWAPPENDINGCOUNT,,"1"
+;HKR,Glide,FX_GLIDE_OVERRIDE_RESOLUTION,,"0"

@@ -1,0 +1,20 @@
+REGEDIT4
+
+;Quake2 fix
+;Overrides default 60hz mode, with 85hz default timings
+;1280x960
+;Modes
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\MODES\8\1280,960]
+@ = "60"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\MODES\16\1280,960]
+@ = ""
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\MODES\32\1280,960]
+@ = ""
+;Timings
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1280,960]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1280,960\60Hz]
+@ = "1728,1344,1504,1011,961,964,0,104820000,6000,8,24002"
+"Supported" = "BPP+8+16+32,DDRAW"

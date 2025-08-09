@@ -1,0 +1,30 @@
+REGEDIT4
+
+;1920x1080 - vga
+;Modes
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\MODES\8\1920,1080]
+@ = "60"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\MODES\16\1920,1080]
+@ = ""
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\MODES\32\1920,1080]
+@ = ""
+;Timings
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\1920,1080]
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\1920,1080\60Hz]
+@ = "2368,1952,2096,1125,1083,1086,12,159840000,6000,8,31714"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\1920,1080\72Hz]
+@ = "2560,1968,2184,1172,1083,1086,12,216023000,7200,8,38875"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\1920,1080\75Hz]
+@ = "GTF"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\1920,1080\85Hz]
+@ = "GTF"
+"Supported" = "BPP+8+16+32,DDRAW"
