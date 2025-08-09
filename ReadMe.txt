@@ -1,23 +1,39 @@
 Voodoo4/5 Wide Driver
-Version 1.1
+Version 1.2
 
 **************************************************************************************************************************************
 Voodoo Series Driver Kit:			1.0
 Voodoo Series Win9x 2D/3D Display Drivers:	4.13.01.0028
 Glide 2.X Driver:				1.00.01.0106		(glide2->glide3 wrapper)
-Glide 3.X Driver:				3.10.00.2620		(Koolsmoky glide 2610 source)
-OpenGL Driver Version:				MesaFx 6.2.0.2		(OpenGL ICD)
+Glide 3.X Driver:				3.10.00.40406		(Glide sourceForge project)
+OpenGL Driver Version:				MesaFx 6.4.2.0		(OpenGL ICD)
 **************************************************************************************************************************************
 
 Release Notes
 =======================================================================
+Version 1.2
+- New OpenGl driver MesaFx-6.4.2
+- Added Refresh Rate variable to 3dfx tools, that will set the highest-avaliable refresh rate for DirectX and OpenGl games.
+- Different Glide3 driver 3.10.00.40406
+- Games that didnt work in the previous version, but now do:
+ - Sin
+ - Oni
+ - Star Trek Voyager Elite Force
+ - Heretic II (had random lock-ups)
+ 
+ Whats known to be broken:
+ - Glide force 32bit rendering
+ - Glide amount of buffered frames?
+ - Sin 8-bit textures
+ - Soldier of fortune Texture corruption
+
 Version 1.1
 - Fixed occasional lock-up on game start
 - Added back sse2 texture downloads, that were removed from v1.0
 - Fixed eventual crash from switching between windowed and fullscreen in glide
 - Alt-tab wont crash openGl games anymore
 
-Version 1.0:
+Version 1.0
 - Added extended resolutions (
 	- 16:9 	- 1280x720, 1360x768, 1600x900, 1920x1080
 	- 16:10	- 1280x800, 1440x900, 1680x1050, 1920x1200
@@ -67,7 +83,7 @@ go to 3dfx tools/gamma settings and move the gamma slider and apply. Move back t
 Open console "~", enter "preferences", it will open advanced settings. Under Glide disable Detail textures and Volumetric lights.
 
 =======================================================================
-ND 2022
-Glide sourceforge project: 	https://sourceforge.net/projects/glide/
-Koolsmoky:			https://www.3dfxzone.it/koolsmoky/
-Mesa3d:				https://www.mesa3d.org/
+ND 2025 - github link
+3dfx Widescreen driver: https://github.com/NejcDolicanin/3dfx_Wide_driver_98
+Glide - Koolsmoky fork: https://github.com/NejcDolicanin/3dfx_glide
+MesaFx-6.4.2: https://github.com/NejcDolicanin/MesaFX-6.4.2
