@@ -13,7 +13,7 @@ Release Notes
 =======================================================================
 Version 1.2
 - New OpenGl driver MesaFx-6.4.2
-- Added Refresh Rate variable to 3dfx tools, that will set the highest-avaliable refresh rate for DirectX and OpenGl games.
+- Added Refresh Rate variable to 3dfx tools, that will set the highest-avaliable refresh rate for glide, DirectX and OpenGl games.
 - Different Glide3 driver 3.10.00.40406
 - Games that didnt work in the previous version, but now do:
  - Sin
@@ -22,9 +22,6 @@ Version 1.2
  - Heretic II (had random lock-ups)
  
  Whats known to be broken:
- - Glide force 32bit rendering
- - Glide amount of buffered frames?
- - Sin 8-bit textures
  - Soldier of fortune Texture corruption
 
 Version 1.1
