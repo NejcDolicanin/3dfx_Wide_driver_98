@@ -13,16 +13,20 @@ Release Notes
 =======================================================================
 Version 1.2
 - New OpenGl driver MesaFx-6.4.2
-- Added Refresh Rate variable to 3dfx tools, that will set the highest-avaliable refresh rate for glide, DirectX and OpenGl games.
+- Added Refresh Rate variable to 3dfx tools, that will set the highest-avaliable refresh rate for glide, DirectX and OpenGl games
 - Different Glide3 driver 3.10.00.40406
+- Quake2 engine games removal of "GL_POINT_SMOOTH", increases fps by about 10%+
 - Games that didnt work in the previous version, but now do:
  - Sin
  - Oni
  - Star Trek Voyager Elite Force
  - Heretic II (had random lock-ups)
+ - Soldier of fortune
  
  Whats known to be broken:
- - Soldier of fortune Texture corruption
+ - Alt-tab
+ - App tab residue after the game is closed
+ - Soldier of fortune stutters on shotgun fire
 
 Version 1.1
 - Fixed occasional lock-up on game start
