@@ -26,7 +26,7 @@ Version 1.2
  Whats known to be broken:
  - Alt-tab
  - App tab residue after the game is closed
- - Soldier of fortune stutters on shotgun fire
+ - Trilinear single pass filtering is disabled on napalm??
 
 Version 1.1
 - Fixed occasional lock-up on game start
