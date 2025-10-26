@@ -12,10 +12,17 @@ OpenGL Driver Version:				MesaFx 6.4.2.0		(OpenGL ICD)
 Release Notes
 =======================================================================
 Version 1.2
+- Different Glide3 driver 3.10.00.40406 (based on sourceForge development version)
+	- But now force 32bit in glide works correctly
+	- Adjusted 2pxpc and analogSli, 1920x1080 and 1600x1200 can now run in 32bit without "sli pink lines".
 - New OpenGl driver MesaFx-6.4.2
+	- Adjusted for the new framebuffer/renderbuffer and texture format changes.
+	- the only openGl ICD is now MesaFx in 3dfxogl.dll
 - Added Refresh Rate variable to 3dfx tools, that will set the highest-avaliable refresh rate for glide, DirectX and OpenGl games
-- Different Glide3 driver 3.10.00.40406
 - Quake2 engine games removal of "GL_POINT_SMOOTH", increases fps by about 10%+
+- Changed some default driver settings, defaulted to 60hz refresh rate(lcd-s).
+	- MesaFx force 16bit is now disable by default
+	- Z-precision now defaults to Fast
 - Games that didnt work in the previous version, but now do:
  - Sin
  - Oni
@@ -26,7 +33,8 @@ Version 1.2
  Whats known to be broken:
  - Alt-tab
  - App tab residue after the game is closed
- - Trilinear single pass filtering is disabled on napalm??
+ - Trilinear single pass filtering is disabled on napalm, fallback to GL_LINEAR_MIPMAP_NEAREST
+
 
 Version 1.1
 - Fixed occasional lock-up on game start

@@ -13,7 +13,7 @@ Class=DISPLAY
 ClassGUID={4D36E968-E325-11CE-BFC1-08002BE10318}
 Provider=%Mfg%
 ;CatalogFile=3dfxvs.cat
-DriverVer=08/15/2025, 4.12.01.0666
+DriverVer=10/26/2025, 4.12.01.0666
 
 [DestinationDirs]
 DefaultDestDir   = 11    ; LDID_SYS
@@ -41,8 +41,8 @@ vgartd.vxd   =1
 3dfxSpl2.dll =1
 3dfxSpl3.dll =1
 3dfxOGL.dll  =1
-opengl32.dll =1
 dxtn.dll     =1
+;opengl32.dll =1
 ;3dfxICD.dll  =1
 
 [Manufacturer]
@@ -91,8 +91,8 @@ glide3x.dll,,,%COPY_FLAG%
 3dfxSpl2.dll,,,%COPY_FLAG%
 3dfxSpl3.dll,,,%COPY_FLAG%
 3dfxOGL.dll,,,%COPY_FLAG%
-opengl32.dll,,,%COPY_FLAG%
 dxtn.dll,,,%COPY_FLAG%
+;opengl32.dll,,,%COPY_FLAG%
 ;3dfxICD.dll,,,%COPY_FLAG%
 
 [Redistrib.System.Win95]
@@ -120,30 +120,18 @@ HKLM,System\CurrentControlSet\Services\VxD\VGARTD,StaticVxD,,"vgartd.vxd"
 [Driver.AddReg]
 HKR,,Ver,,4.0
 HKR,,DevLoader,,*vdd
-HKR,DEFAULT,Mode,,"16,800,600"
+HKR,DEFAULT,Mode,,"16,1024,768"
 HKR,DEFAULT,drv,,3dfx16vs.drv
 HKR,DEFAULT,drv2,,3dfx16vs.drv
 HKR,DEFAULT,vdd,,"*vdd"
 HKR,DEFAULT,minivdd,,3dfxvs.vxd
 HKR,DEFAULT,minivdd2,,3dfxvs.vxd
-HKR,DEFAULT,RefreshRate,,-1
+HKR,DEFAULT,RefreshRate,,"60" 
+;refreshRate -1
 HKR,DEFAULT,DDC,,1
 HKR,DEFAULT,afifo,0x00001,0,0,0,1   ;DWORD setting as binaries for Win95
 HKR,,ProviderName,,"3dfx Interactive, Inc."
 HKLM,"Software\Microsoft\Windows\CurrentVersion\OpenGLdrivers","3dfx",,"3dfxogl.dll"
-
-;;For IniFile - Refresh rate
-HKR,DEFAULT\"Optimal Refresh Limit",Control,,"Combo"
-HKR,DEFAULT\"Optimal Refresh Limit",List,,"60hz(Default),75hz,85hz,100hz,120hz,144hz"
-HKR,DEFAULT\"Optimal Refresh Limit",Value,,"0"
-HKR,DEFAULT\"Optimal Refresh Limit",Default,,"0"
-HKR,DEFAULT\"Optimal Refresh Limit",Localisation,,"Refresh rate"
-HKR,DEFAULT\"Optimal Refresh Limit","Tweak Map",,"60,75,85,100,120,144"
-HKR,DEFAULT\"Optimal Refresh Limit","Tweak Value",,"RefreshRate"
-HKR,DEFAULT\"Optimal Refresh Limit","Default On Boot",,"0"
-HKR,DEFAULT\"Optimal Refresh Limit","Previous Value",,"0"
-HKR,DEFAULT\"Optimal Refresh Limit","Help",,"Sets Optimal refresh rate limit, in-game. For DirectX and OpenGl"
-HKR,DEFAULT,RefreshRate,,"-1"
 
 ; Modes
 HKR,"MODES\4\640,480",drv,,vga.drv
@@ -180,7 +168,7 @@ HKR,"MODES\8\1920,800",,,"60,75,85,100,120"
 HKR,"MODES\8\1920,1080",,,"60,72,75,85"
 HKR,"MODES\8\1920,1200",,,"60,76,85"
 HKR,"MODES\8\1920,1440",,,"60,75"
-HKR,"MODES\8\2048,1536",,,"60,75"
+;HKR,"MODES\8\2048,1536",,,"60,75"
 
 HKR,"MODES\16\640,480"
 HKR,"MODES\16\800,600"
@@ -214,7 +202,7 @@ HKR,"MODES\16\1920,800"
 HKR,"MODES\16\1920,1080"
 HKR,"MODES\16\1920,1200"
 HKR,"MODES\16\1920,1440"
-HKR,"MODES\16\2048,1536"
+;HKR,"MODES\16\2048,1536"
 HKR,"MODES\32\640,480"
 HKR,"MODES\32\800,600"
 HKR,"MODES\32\960,720"
@@ -247,9 +235,10 @@ HKR,"MODES\32\1920,800"
 HKR,"MODES\32\1920,1080"
 HKR,"MODES\32\1920,1200"
 HKR,"MODES\32\1920,1440"
-HKR,"MODES\32\2048,1536"
+;HKR,"MODES\32\2048,1536"
 
-HKR,"TIMINGS",OptimalRefreshLimit,,"75"
+HKR,"TIMINGS",OptimalRefreshLimit,,"60"
+;HKR,"TIMINGS",OptimalRefreshLimit,,"75"
 ;HKR,"TIMINGS",OptimalRefreshLimit,,"144"
 HKR,"TIMINGS\640,480\60Hz",,,"800,656,752,525,490,492,12,25175000,5994,8,12246"
 HKR,"TIMINGS\640,480\60Hz",AltDFP,,"0xa3,0x4f,0x60,0x8c,0x68,0x1c,0x20,0xb3,0x60,0x70,0x01,0xdf,0x67,0x88,0x20,0x00,0xcf,0x21,0x29,0x6b,0x00,120"
@@ -521,10 +510,10 @@ HKR,"TIMINGS\1920,1440\75Hz",,,"2640,2064,2288,1500,1441,1444,4,297000000,7500,8
 HKR,"TIMINGS\1920,1440\75Hz",Supported,,"BPP+8+16+32,DDRAW"
 
 ;NOTE: 2048 by 1536 is NOT supported in 32 bit modes on Voodoo3
-HKR,"TIMINGS\2048,1536\60Hz",,,"2504,2096,2312,1597,1537,1540,0,239933000,6000,8,41587"
-HKR,"TIMINGS\2048,1536\60Hz",Supported,,"BPP+8+16+32,DDRAW"
-HKR,"TIMINGS\2048,1536\75Hz",,,"2656,2112,2328,1606,1537,1540,0,319915000,7500,8,51278"
-HKR,"TIMINGS\2048,1536\75Hz",Supported,,"BPP+8+16+32,DDRAW"
+;HKR,"TIMINGS\2048,1536\60Hz",,,"2504,2096,2312,1597,1537,1540,0,239933000,6000,8,41587"
+;HKR,"TIMINGS\2048,1536\60Hz",Supported,,"BPP+8+16+32,DDRAW"
+;HKR,"TIMINGS\2048,1536\75Hz",,,"2656,2112,2328,1606,1537,1540,0,319915000,7500,8,51278"
+;HKR,"TIMINGS\2048,1536\75Hz",Supported,,"BPP+8+16+32,DDRAW"
 ;HKR,"TIMINGS\2048,1536\85Hz",,,"2568,2048,2232,1586,1536,1539,0,346000000,8495,8,54612"
 ;HKR,"TIMINGS\2048,1536\85Hz",Supported,,"BPP+8+16+32,DDRAW"
 
@@ -615,6 +604,19 @@ HKR,Default\"Cursor","Tweak Map",,"0,1"
 HKR,Default\"Cursor","Tweak Value",,"UseSoftwareCursor"
 HKR,Default\"Cursor","Default On Boot",,"1"
 HKR,Default\"Cursor","HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Advanced%20Features/3dfx%20Tools%20Advanced%20Features%20Help.htm"
+
+;;For IniFile - Refresh rate
+HKR,DEFAULT\"Optimal Refresh Limit",Control,,"Combo"
+HKR,DEFAULT\"Optimal Refresh Limit",List,,"60hz(Default),75hz,85hz,100hz,120hz,144hz"
+HKR,DEFAULT\"Optimal Refresh Limit",Value,,"60"
+HKR,DEFAULT\"Optimal Refresh Limit",Default,,"60"
+HKR,DEFAULT\"Optimal Refresh Limit",Localisation,,"Refresh rate"
+HKR,DEFAULT\"Optimal Refresh Limit","Tweak Map",,"60,75,85,100,120,144"
+HKR,DEFAULT\"Optimal Refresh Limit","Tweak Value",,"RefreshRate"
+HKR,DEFAULT\"Optimal Refresh Limit","Default On Boot",,"60"
+HKR,DEFAULT\"Optimal Refresh Limit","Previous Value",,"0"
+HKR,DEFAULT\"Optimal Refresh Limit","Help",,"Sets Optimal refresh rate limit, in-game."
+HKR,DEFAULT,RefreshRate,,"60"
 
 ;Direct 3D
 
@@ -835,8 +837,8 @@ HKR,Glide\QuadChipAASLI,"HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Anti
 
 HKR,Glide\%DepthPrecision16%,Control,,"Combo"
 HKR,Glide\%DepthPrecision16%,List,,"%Disable%,Fast,Faster"
-HKR,Glide\%DepthPrecision16%,Value,,"2"
-HKR,Glide\%DepthPrecision16%,Default,,"2"
+HKR,Glide\%DepthPrecision16%,Value,,"1"
+HKR,Glide\%DepthPrecision16%,Default,,"1"
 HKR,Glide\%DepthPrecision16%,"Tweak Value",,"FX_GL_16BPP_ZPRECISION"
 HKR,Glide\%DepthPrecision16%,"Tweak Map",,"0,1,2"
 HKR,Glide\%DepthPrecision16%,"HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Advanced%20Features/3dfx%20Tools%20Advanced%20Features%20Help.htm#Glide_16BPP"
@@ -844,8 +846,8 @@ HKR,Glide,FX_GL_16BPP_ZPRECISION,,"1"
 
 HKR,Glide\%DepthPrecision32%,Control,,"Combo"
 HKR,Glide\%DepthPrecision32%,List,,"%Disable%,Fast,Faster"
-HKR,Glide\%DepthPrecision32%,Value,,"2"
-HKR,Glide\%DepthPrecision32%,Default,,"2"
+HKR,Glide\%DepthPrecision32%,Value,,"1"
+HKR,Glide\%DepthPrecision32%,Default,,"1"
 HKR,Glide\%DepthPrecision32%,"Tweak Value",,"FX_GL_32BPP_ZPRECISION"
 HKR,Glide\%DepthPrecision32%,"Tweak Map",,"0,1,2"
 HKR,Glide\%DepthPrecision32%,"HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Advanced%20Features/3dfx%20Tools%20Advanced%20Features%20Help.htm#Glide_32BPP"
@@ -971,22 +973,22 @@ HKR,Glide,FX_GLIDE_OVERRIDE_RESOLUTION,,"0"
 ;MesaFx Override 16bit rendering
 HKR,Glide\"MesaFx Force 16bit rendering",Control,,"Combo"
 HKR,Glide\"MesaFx Force 16bit rendering",List,,"Disable,Enable"
-HKR,Glide\"MesaFx Force 16bit rendering",Value,,"1"
-HKR,Glide\"MesaFx Force 16bit rendering",Default,,"1"
+HKR,Glide\"MesaFx Force 16bit rendering",Value,,"0"
+HKR,Glide\"MesaFx Force 16bit rendering",Default,,"0"
 HKR,Glide\"MesaFx Force 16bit rendering","Tweak Value",,"FX_MESA_FORCE_16BPP_PIX"
 HKR,Glide\"MesaFx Force 16bit rendering","Tweak Map",,"*,1"
 HKR,Glide\"MesaFx Force 16bit rendering","Help",,"Forces 16bit rendering, default MesaFx is 32bit - This will only affect OpenGl games"
-HKR,Glide,FX_MESA_FORCE_16BPP_PIX,,"1"
+HKR,Glide,FX_MESA_FORCE_16BPP_PIX,,"0"
 
 ;MesaFx Override 16bit textures
 HKR,Glide\"MesaFx Force 16bit textures",Control,,"Combo"
 HKR,Glide\"MesaFx Force 16bit textures",List,,"Disable,Enable"
-HKR,Glide\"MesaFx Force 16bit textures",Value,,"1"
-HKR,Glide\"MesaFx Force 16bit textures",Default,,"1"
+HKR,Glide\"MesaFx Force 16bit textures",Value,,"0"
+HKR,Glide\"MesaFx Force 16bit textures",Default,,"0"
 HKR,Glide\"MesaFx Force 16bit textures","Tweak Value",,"FX_MESA_FORCE_16BPP_TEXTURES"
 HKR,Glide\"MesaFx Force 16bit textures","Tweak Map",,"*,1"
 HKR,Glide\"MesaFx Force 16bit textures","Help",,"Forces 16bit textures, default MesaFx is 32bit - This will only affect OpenGl games"
-HKR,Glide,FX_MESA_FORCE_16BPP_TEXTURES,,"1"
+HKR,Glide,FX_MESA_FORCE_16BPP_TEXTURES,,"0"
 
 
 [3dfxTools_Voodoo6]
@@ -1080,4 +1082,4 @@ GuardBandClippingD3D="Guardband Clip D3D"
 DepthPrecision16="Depth Precision (16 Bit)"
 DepthPrecision32="Depth Precision (32 Bit)"
 SCAPKEY="Screen Capture Hotkey"
-VramOpt="VRAM Optimization"
+VramOpt="Refresh Optimization"
