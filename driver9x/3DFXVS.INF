@@ -120,7 +120,7 @@ HKLM,System\CurrentControlSet\Services\VxD\VGARTD,StaticVxD,,"vgartd.vxd"
 [Driver.AddReg]
 HKR,,Ver,,4.0
 HKR,,DevLoader,,*vdd
-HKR,DEFAULT,Mode,,"16,1024,768"
+HKR,DEFAULT,Mode,,"16,800,600"
 HKR,DEFAULT,drv,,3dfx16vs.drv
 HKR,DEFAULT,drv2,,3dfx16vs.drv
 HKR,DEFAULT,vdd,,"*vdd"
