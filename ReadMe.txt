@@ -21,8 +21,12 @@ Version 1.2
 - Added Refresh Rate variable to 3dfx tools, that will set the highest-avaliable refresh rate for glide, DirectX and OpenGl games
 - Quake2 engine games removal of "GL_POINT_SMOOTH", increases fps by about 10%+
 - Changed some default driver settings, defaulted to 60hz refresh rate(lcd-s).
-	- MesaFx force 16bit is now disable by default
+	- MesaFx force 16bit px and 16bit textures is now disable by default
 	- Z-precision now defaults to Fast
+	- d3d Guardband Clipping enabled by default
+	- added Glide Guardband Clipping toggle, enabled by default
+	- glide splash disabled by default
+	- both vsync disabled by default
 - Games that didnt work in the previous version, but now do:
  - Sin
  - Oni

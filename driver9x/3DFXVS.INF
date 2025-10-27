@@ -13,7 +13,7 @@ Class=DISPLAY
 ClassGUID={4D36E968-E325-11CE-BFC1-08002BE10318}
 Provider=%Mfg%
 ;CatalogFile=3dfxvs.cat
-DriverVer=10/26/2025, 4.12.01.0666
+DriverVer=10/26/2025, 1.2
 
 [DestinationDirs]
 DefaultDestDir   = 11    ; LDID_SYS
@@ -740,22 +740,22 @@ HKR,D3D\"Triple Buffering","HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/A
 ;Guardband clipping
 HKR,D3D\%GuardBandClippingD3D%,Control,,"Combo"
 HKR,D3D\%GuardBandClippingD3D%,List,,"Disable,Enable"
-HKR,D3D\%GuardBandClippingD3D%,Value,,"0"
-HKR,D3D\%GuardBandClippingD3D%,Default,,"0"
+HKR,D3D\%GuardBandClippingD3D%,Value,,"1"
+HKR,D3D\%GuardBandClippingD3D%,Default,,"1"
 HKR,D3D\%GuardBandClippingD3D%,"Tweak Value",,"SSTH3_GUARDBAND_CLIPPING"
 HKR,D3D\%GuardBandClippingD3D%,"Tweak Map",,"0,1"
 HKR,D3D\%GuardBandClippingD3D%,"HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Advanced%20Features/3dfx%20Tools%20Advanced%20Features%20Help.htm#D3D_GUARDCLIPD3D"
-HKR,D3D,SSTH3_GUARDBAND_CLIPPING,,"0"
+HKR,D3D,SSTH3_GUARDBAND_CLIPPING,,"1"
 
 ;vsync
 HKR,D3D\%Vsync%,Control,,"Combo"
 HKR,D3D\%Vsync%,List,,"Software Controlled,%Disable%,%Enable%"
-HKR,D3D\%Vsync%,Value,,"0"
-HKR,D3D\%Vsync%,Default,,"0"
+HKR,D3D\%Vsync%,Value,,"1"
+HKR,D3D\%Vsync%,Default,,"1"
 HKR,D3D\%Vsync%,"Tweak Map",,"*,0,1"
 HKR,D3D\%Vsync%,"Tweak Value",,"SSTH3_SWAPINTERVAL"
 HKR,D3D\%Vsync%,"Help",,"Vsync setting"
-HKR,D3D,SSTH3_SWAPINTERVAL,,"0"
+HKR,D3D,SSTH3_SWAPINTERVAL,,"1"
 
 ; Section for Glide tweaks
 
@@ -855,8 +855,8 @@ HKR,Glide,FX_GL_32BPP_ZPRECISION,,"1"
 
 HKR,Glide\%SplashScreen%,Control,,"Combo"
 HKR,Glide\%SplashScreen%,List,,"%Enable%,%Disable%"
-HKR,Glide\%SplashScreen%,Value,,"0"
-HKR,Glide\%SplashScreen%,Default,,"0"
+HKR,Glide\%SplashScreen%,Value,,"1"
+HKR,Glide\%SplashScreen%,Default,,"1"
 HKR,Glide\%SplashScreen%,"Tweak Map",,"*,1"
 HKR,Glide\%SplashScreen%,"Tweak Value",,"FX_GLIDE_NO_SPLASH"
 HKR,Glide\%SplashScreen%,"HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Advanced%20Features/3dfx%20Tools%20Advanced%20Features%20Help.htm#Glide_Splash"
@@ -920,12 +920,12 @@ HKR,Glide,FX_GLIDE_ALLOC_COLOR,,"-1"
 
 HKR,Glide\"%Vsync%",Control,,"Combo"
 HKR,Glide\"%Vsync%",List,,"Software Controlled,%Disable%,%Enable%"
-HKR,Glide\"%Vsync%",Value,,"0"
-HKR,Glide\"%Vsync%",Default,,"0"
+HKR,Glide\"%Vsync%",Value,,"1"
+HKR,Glide\"%Vsync%",Default,,"1"
 HKR,Glide\"%Vsync%","Tweak Map",,"*,0,1"
 HKR,Glide\"%Vsync%","Tweak Value",,"FX_GLIDE_SWAPINTERVAL"
 HKR,Glide\"%Vsync%","HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Advanced%20Features/3dfx%20Tools%20Advanced%20Features%20Help.htm#Glide_VSync"
-;HKR,Glide,FX_GLIDE_SWAPINTERVAL,,"0"
+HKR,Glide,FX_GLIDE_SWAPINTERVAL,,"1"
 
 ;Guardband clipping
 ;HKR,Glide\"OpenGl Guardband Clipping",Control,,"Combo"
@@ -939,17 +939,28 @@ HKR,Glide\"%Vsync%","HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Advanced
 ;HKR,Glide\"OpenGl Guardband Clipping","Help",,"This setting can improve performance by reducing the amount of clipping calculations performed by the CPU. (This setting should not be enabled with Hidden Surface Removal)"
 ;HKR,Glide,FX_GL_GUARDBAND_ENABLED,,"0"
 
+HKR,Glide\"Glide Guardband Clipping",Control,,"Combo"
+HKR,Glide\"Glide Guardband Clipping",List,,"%Disable%,%Enable%"
+HKR,Glide\"Glide Guardband Clipping",Value,,"1"
+HKR,Glide\"Glide Guardband Clipping",Default,,"1"
+HKR,Glide\"Glide Guardband Clipping",Performance,,"1"
+HKR,Glide\"Glide Guardband Clipping",Quality,,"0"
+HKR,Glide\"Glide Guardband Clipping","Tweak Value",,"FX_GLIDE_GBC"
+HKR,Glide\"Glide Guardband Clipping","Tweak Map",,"0,1"
+HKR,Glide\"Glide Guardband Clipping","HTML Help",,"This setting can improve performance by reducing the amount of clipping calculations performed by the CPU."
+HKR,Glide,FX_GLIDE_GBC,,"1"
+
 ;HSR
-HKR,Glide\"Hidden Surface Removal",Control,,"Combo"
-HKR,Glide\"Hidden Surface Removal",List,,"%Disable%,Conservative Tiling,Non-Aggressive Tiling,Semi-Aggressive Tiling,Aggressive Tiling"
-HKR,Glide\"Hidden Surface Removal",Value,,"0"
-HKR,Glide\"Hidden Surface Removal",Default,,"0"
-HKR,Glide\"Hidden Surface Removal",Performance,,"1"
-HKR,Glide\"Hidden Surface Removal",Quality,,"0"
-HKR,Glide\"Hidden Surface Removal","Tweak Value",,"FX_GL_HSR"
-HKR,Glide\"Hidden Surface Removal","Tweak Map",,"0,1,2,3,4"
-HKR,Glide\"Hidden Surface Removal","HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Advanced%20Features/3dfx%20Tools%20Advanced%20Features%20Help.htm#Glide_HSR"
-HKR,Glide,FX_GL_HSR,,"0"
+;HKR,Glide\"Hidden Surface Removal",Control,,"Combo"
+;HKR,Glide\"Hidden Surface Removal",List,,"%Disable%,Conservative Tiling,Non-Aggressive Tiling,Semi-Aggressive Tiling,Aggressive Tiling"
+;HKR,Glide\"Hidden Surface Removal",Value,,"0"
+;HKR,Glide\"Hidden Surface Removal",Default,,"0"
+;HKR,Glide\"Hidden Surface Removal",Performance,,"1"
+;HKR,Glide\"Hidden Surface Removal",Quality,,"0"
+;HKR,Glide\"Hidden Surface Removal","Tweak Value",,"FX_GL_HSR"
+;HKR,Glide\"Hidden Surface Removal","Tweak Map",,"0,1,2,3,4"
+;HKR,Glide\"Hidden Surface Removal","HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Advanced%20Features/3dfx%20Tools%20Advanced%20Features%20Help.htm#Glide_HSR"
+;HKR,Glide,FX_GL_HSR,,"0"
 
 ;Screenshot
 HKR,Glide\"%SCAPKEY%",Control,,"Combo"
