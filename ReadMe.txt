@@ -25,8 +25,8 @@ Version 1.2
 	- Z-precision now defaults to Fast
 	- d3d Guardband Clipping enabled by default
 	- added Glide Guardband Clipping toggle, enabled by default
-	- glide splash disabled by default
-	- both vsync disabled by default
+	- 3dfx splash disabled by default
+	- Added agp command fifo
 - Games that didnt work in the previous version, but now do:
  - Sin
  - Oni

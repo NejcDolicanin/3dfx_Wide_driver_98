@@ -13,7 +13,7 @@ Class=DISPLAY
 ClassGUID={4D36E968-E325-11CE-BFC1-08002BE10318}
 Provider=%Mfg%
 ;CatalogFile=3dfxvs.cat
-DriverVer=10/26/2025, 1.2
+DriverVer=10/26/2025, 4.13.01.0009
 
 [DestinationDirs]
 DefaultDestDir   = 11    ; LDID_SYS
@@ -584,6 +584,15 @@ HKR,,"HTML Card Help",,"3dfx Voodoo5 help.chm"
 
 ;individual tweaks settings
 
+HKR,Default\"AGP Command FIFO",Control,,"Combo"
+HKR,Default\"AGP Command FIFO",List,,"%Disable% (Reboot Required),Auto Detect,AGP 1x,AGP 2x"
+HKR,Default\"AGP Command FIFO",Default,,"2"
+HKR,Default\"AGP Command FIFO",Value,,"2"
+HKR,Default\"AGP Command FIFO","Tweak Map",,"-1,0,1,2"
+HKR,Default\"AGP Command FIFO","Tweak Value",,"SSTH3_AGP_XRATE"
+HKR,Default\"AGP Command FIFO","HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Advanced%20Features/3dfx%20Tools%20Advanced%20Features%20Help.htm#AGP"
+HKR,Default,SSTH3_AGP_XRATE,,"1"
+
 HKR,DEFAULT,Localisation,,"Special Settings"
 HKR,Default\"%VramOpt%",Control,,"Combo"
 HKR,Default\"%VramOpt%",List,,"%Disable%,%Enable%"
@@ -750,12 +759,12 @@ HKR,D3D,SSTH3_GUARDBAND_CLIPPING,,"1"
 ;vsync
 HKR,D3D\%Vsync%,Control,,"Combo"
 HKR,D3D\%Vsync%,List,,"Software Controlled,%Disable%,%Enable%"
-HKR,D3D\%Vsync%,Value,,"1"
-HKR,D3D\%Vsync%,Default,,"1"
+HKR,D3D\%Vsync%,Value,,"0"
+HKR,D3D\%Vsync%,Default,,"0"
 HKR,D3D\%Vsync%,"Tweak Map",,"*,0,1"
 HKR,D3D\%Vsync%,"Tweak Value",,"SSTH3_SWAPINTERVAL"
 HKR,D3D\%Vsync%,"Help",,"Vsync setting"
-HKR,D3D,SSTH3_SWAPINTERVAL,,"1"
+HKR,D3D,SSTH3_SWAPINTERVAL,,"0"
 
 ; Section for Glide tweaks
 
@@ -920,12 +929,12 @@ HKR,Glide,FX_GLIDE_ALLOC_COLOR,,"-1"
 
 HKR,Glide\"%Vsync%",Control,,"Combo"
 HKR,Glide\"%Vsync%",List,,"Software Controlled,%Disable%,%Enable%"
-HKR,Glide\"%Vsync%",Value,,"1"
-HKR,Glide\"%Vsync%",Default,,"1"
+HKR,Glide\"%Vsync%",Value,,"0"
+HKR,Glide\"%Vsync%",Default,,"0"
 HKR,Glide\"%Vsync%","Tweak Map",,"*,0,1"
 HKR,Glide\"%Vsync%","Tweak Value",,"FX_GLIDE_SWAPINTERVAL"
 HKR,Glide\"%Vsync%","HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Advanced%20Features/3dfx%20Tools%20Advanced%20Features%20Help.htm#Glide_VSync"
-HKR,Glide,FX_GLIDE_SWAPINTERVAL,,"1"
+HKR,Glide,FX_GLIDE_SWAPINTERVAL,,"0"
 
 ;Guardband clipping
 ;HKR,Glide\"OpenGl Guardband Clipping",Control,,"Combo"
