@@ -29,16 +29,16 @@ Version 1.2
 	- 3dfx splash disabled by default
 	- Added agp command fifo
 - Games that didnt work in the previous version, but now do:
- - Sin
- - Oni
- - Star Trek Voyager Elite Force
- - Heretic II (had random lock-ups)
- - Soldier of fortune
+	- Sin
+	- Oni
+	- Star Trek Voyager Elite Force
+	- Heretic II (had random lock-ups)
+	- Soldier of fortune
  
  Whats known to be broken:
- - Alt-tab
- - App tab residue after the game is closed
- - Trilinear single pass filtering is disabled on napalm, fallback to GL_LINEAR_MIPMAP_NEAREST
+	- Alt-tab
+	- App tab residue after the game is closed
+	- Trilinear single pass filtering is disabled on napalm, fallback to GL_LINEAR_MIPMAP_NEAREST
 
 
 Version 1.1
