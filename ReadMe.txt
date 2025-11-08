@@ -20,6 +20,7 @@ Version 1.2
 	- the only openGl ICD is now MesaFx in 3dfxogl.dll
 - Added Refresh Rate variable to 3dfx tools, that will set the highest-avaliable refresh rate for glide, DirectX and OpenGl games
 - Quake2 engine games removal of "GL_POINT_SMOOTH", increases fps by about 10%+
+- Implemented legacy extension GL_SGIS_multitexture, but just a wrapper to GL_ARB_multitexture, that superseded it.
 - Changed some default driver settings, defaulted to 60hz refresh rate(lcd-s).
 	- MesaFx force 16bit px and 16bit textures is now disable by default
 	- Z-precision now defaults to Fast

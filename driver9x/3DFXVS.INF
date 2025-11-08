@@ -13,7 +13,7 @@ Class=DISPLAY
 ClassGUID={4D36E968-E325-11CE-BFC1-08002BE10318}
 Provider=%Mfg%
 ;CatalogFile=3dfxvs.cat
-DriverVer=10/26/2025, 4.13.01.0009
+DriverVer=11/13/2025, 4.13.01.0009
 
 [DestinationDirs]
 DefaultDestDir   = 11    ; LDID_SYS
