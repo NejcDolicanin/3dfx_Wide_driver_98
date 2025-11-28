@@ -13,7 +13,7 @@ Class=DISPLAY
 ClassGUID={4D36E968-E325-11CE-BFC1-08002BE10318}
 Provider=%Mfg%
 ;CatalogFile=3dfxvs.cat
-DriverVer=11/13/2025, 4.13.01.0009
+DriverVer=11/29/2025
 
 [DestinationDirs]
 DefaultDestDir   = 11    ; LDID_SYS
@@ -1052,7 +1052,7 @@ HKR,Glide,FX_GLIDE_V3FIFO,,"1"
 ;Default board set
 ;HKR,Glide,FX_GLIDE_SST_PRIMARY,,"0"
 [Strings]
-Mfg="3dfx Inc. - Wide Driver 1.2"
+Mfg="3dfx Inc. - Wide Driver 1.3"
 IN_USE="0x00010000"
 NO_DIALOG="0x00000020"
 ;No version Check (0x4) and Force in use (0x8)

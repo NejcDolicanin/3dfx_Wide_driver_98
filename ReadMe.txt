@@ -1,13 +1,25 @@
 Voodoo4/5 Wide Driver
-Version 1.2
+Version 1.3
 
 **************************************************************************************************************************************
 Voodoo Series Driver Kit:			1.0
 Voodoo Series Win9x 2D/3D Display Drivers:	4.13.01.0028
 Glide 2.X Driver:				1.00.01.0106		(glide2->glide3 wrapper)
 Glide 3.X Driver:				3.10.00.40406		(Glide sourceForge project)
-OpenGL Driver Version:				MesaFx 6.4.2.0		(OpenGL ICD)
+OpenGL Driver Version:				MesaFx 7.4.4.0		(OpenGL ICD)
 **************************************************************************************************************************************
+
+Release Notes
+=======================================================================
+Version 1.3
+- New OpenGl driver MesaFx-7.4.4
+	- Improvements that come with core mesa additions and a bit of a code cleanup
+	- Sin fix when forcing 16bit textures, before the toggle was ignored for this games textures.
+ 
+ Whats known to be broken:
+	- Alt-tab
+	- App tab residue after the game is closed
+	- Trilinear single pass filtering is disabled on napalm, fallback to GL_LINEAR_MIPMAP_NEAREST
 
 Release Notes
 =======================================================================
