@@ -3,11 +3,11 @@ REGEDIT4
 ;Add control over Optimal refresh rate for 3dfx Tools in general section
 
 ;Variable holder with default value "-1"
-[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\DEFAULT]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\DEFAULT]
 "RefreshRate" = "-1"
 
 ;Folder with all entries
-[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\DEFAULT\Refresh Rate]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\DEFAULT\Refresh Rate]
 @ = ""
 "Control" = "Combo"
 "Default" = "0"
