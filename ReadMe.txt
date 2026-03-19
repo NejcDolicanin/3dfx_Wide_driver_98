@@ -11,6 +11,11 @@ OpenGL Driver Version:				MesaFx 7.4.4.0		(OpenGL ICD)
 
 Release Notes
 =======================================================================
+Version 1.4
+- Added 1960x840 (21:9) resolution
+
+Release Notes
+=======================================================================
 Version 1.3
 - New OpenGl driver MesaFx-7.4.4
 	- Improvements that come with core mesa additions and a bit of a code cleanup
