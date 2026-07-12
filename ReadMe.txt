@@ -13,6 +13,7 @@ Release Notes
 =======================================================================
 Version 1.4
 - Added 1960x840 (21:9) resolution
+- Fixed Alt-tab crashing in OpenGL games
 
 Release Notes
 =======================================================================
@@ -117,4 +118,4 @@ Open console "~", enter "preferences", it will open advanced settings. Under Gli
 ND 2025 - github link
 3dfx Widescreen driver: https://github.com/NejcDolicanin/3dfx_Wide_driver_98
 Glide - Koolsmoky fork: https://github.com/NejcDolicanin/3dfx_glide
-MesaFx-6.4.2: https://github.com/NejcDolicanin/MesaFX-6.4.2
+MesaFx-7.4.4: https://github.com/NejcDolicanin/MesaFX-7.4.4
