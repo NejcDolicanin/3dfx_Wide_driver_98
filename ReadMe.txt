@@ -14,6 +14,8 @@ Release Notes
 Version 1.4
 - Added 1960x840 (21:9) resolution
 - Fixed Alt-tab crashing in OpenGL games
+- Trilinear texture filtering enabled (with a toggle). Still has to be set in-game.
+- Renamed MesaFx texts in 3dfx to Opengl, to avoid confusion
 
 Release Notes
 =======================================================================

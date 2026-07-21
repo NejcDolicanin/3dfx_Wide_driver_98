@@ -1,0 +1,29 @@
+REGEDIT4
+
+;Force MesaFx 16bit textures and 16bit rendering for 3dfx Tools in glide section
+
+;Glide variable holder with default value "1"
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\GLIDE]
+"FX_MESA_TRILINEAR_ENABLED" = "0"
+
+;Folder with all entries
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\GLIDE\OpenGL Enable Trilinear texture filtering]
+@ = ""
+"Control" = "Combo"
+"Default" = "0"
+"List" = "Disabled,Enabled"
+"Tweak Map" = "0,1"
+"Tweak Value" = "FX_MESA_TRILINEAR_ENABLED"
+"Help" = "Enable Trilinear filtering (still has to be set in-game GL_LINEAR_MIPMAP_LINEAR). Multitexturing will be disabled at the same time. So dont forget to DISABLE this feature if you are going to use Bilinear."
+"Value" = "0"
+
+;For IniFile
+;HKR,Glide\"OpenGL Enable Trilinear texture filtering",Control,,"Combo"
+;HKR,Glide\"OpenGL Enable Trilinear texture filtering",List,,"Disabled,Enabled"
+;HKR,Glide\"OpenGL Enable Trilinear texture filtering",Value,,"0"
+;HKR,Glide\"OpenGL Enable Trilinear texture filtering",Default,,"0"
+;HKR,Glide\"OpenGL Enable Trilinear texture filtering","Tweak Value",,"FX_MESA_TRILINEAR_ENABLED"
+;HKR,Glide\"OpenGL Enable Trilinear texture filtering","Tweak Map",,"0,1"
+;HKR,Glide\"OpenGL Enable Trilinear texture filtering","Help",,"Enable Trilinear filtering (still has to be set in-game GL_LINEAR_MIPMAP_LINEAR). Multitexturing and combine_ext will be disabled at the same time. So dont forget to disable this feature if you are going to use Bilinear."
+;HKR,Glide,FX_MESA_TRILINEAR_ENABLED,,"0"
+
