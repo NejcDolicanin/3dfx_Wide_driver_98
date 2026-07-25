@@ -136,3 +136,81 @@ REGEDIT4
 [HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\1960,840\120Hz]
 @ = "2088,2000,2032,868,841,844,4,217480000,12000,8,42433"
 "Supported" = "BPP+8+16+32,DDRAW"
+
+;2096x900
+;Modes
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\MODES\8\2096,900]
+@ = "60"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\MODES\16\2096,900]
+@ = ""
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\MODES\32\2096,900]
+@ = ""
+;Timings
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\2096,900]
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\2096,900\60Hz]
+@ = "2200,2112,2128,927,901,904,4,122360000,6000,8,27420"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\2096,900\75Hz]
+@ = "2200,2112,2128,927,901,904,4,152940000,7500,8,31978"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\2096,900\85Hz]
+@ = "2200,2112,2128,927,901,904,4,173400000,8500,8,35024"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\2096,900\100Hz]
+@ = "2200,2112,2128,927,901,904,4,204030000,10000,8,39587"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+
+;2304x960
+;Modes
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\MODES\8\2304,960]
+@ = "60"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\MODES\16\2304,960]
+@ = ""
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\MODES\32\2304,960]
+@ = ""
+;Timings
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\2304,960]
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\2304,960\60Hz]
+@ = "2464,2352,2384,988,963,973,8,146060000,6000,8,30746"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\2304,960\75Hz]
+@ = "2464,2352,2384,988,963,973,8,182580000,7500,8,35898"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\2304,960\85Hz]
+@ = "2464,2352,2384,988,963,973,8,206920000,8500,8,39332"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+;2560x1080
+;Modes
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\MODES\8\2560,1080]
+@ = "60"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\MODES\16\2560,1080]
+@ = ""
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\MODES\32\2560,1080]
+@ = ""
+;Timings
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\2560,1080]
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\2560,1080\60Hz]
+@ = "2720,2608,2640,1111,1083,1093,8,181310000,6000,8,35402"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\TIMINGS\2560,1080\70Hz]
+@ = "2720,2608,2640,1111,1083,1093,8,211700000,7000,8,39441"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+

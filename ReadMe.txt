@@ -13,9 +13,14 @@ Release Notes
 =======================================================================
 Version 1.4
 - Added 1960x840 (21:9) resolution
+- Added 2096x900 (21:9) resolution
+- Added 2304x960 (21:9) resolution
+- Added 2560x1080 (21:9) resolution
+- 1920x1080 changed timing from 84hz to 85hz
 - Fixed Alt-tab crashing in OpenGL games
 - Trilinear texture filtering enabled (with a toggle). Still has to be set in-game.
-- Renamed MesaFx texts in 3dfx to Opengl, to avoid confusion
+- MiniVdd driver minor fix that enables higher resolutions
+- Renamed MesaFx texts in 3dfxTools to Opengl, to avoid confusion
 
 Release Notes
 =======================================================================
