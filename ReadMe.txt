@@ -5,22 +5,23 @@ Version 1.4
 Voodoo Series Driver Kit:			1.0
 Voodoo Series Win9x 2D/3D Display Drivers:	4.13.01.0028
 Glide 2.X Driver:				1.00.01.0106		(glide2->glide3 wrapper)
-Glide 3.X Driver:				3.10.00.40406		(Glide sourceForge project)
-OpenGL Driver Version:				MesaFx 7.4.4.0		(OpenGL ICD)
+Glide 3.X Driver:				3.10.00.40407		(Glide sourceForge project)
+OpenGL Driver Version:			MesaFx 7.4.4.0		(v0.75)	(OpenGL ICD)
 **************************************************************************************************************************************
 
 Release Notes
 =======================================================================
 Version 1.4
-- Added 1960x840 (21:9) resolution
-- Added 2096x900 (21:9) resolution
-- Added 2304x960 (21:9) resolution
-- Added 2560x1080 (21:9) resolution
-- 1920x1080 changed timing from 84hz to 85hz
+- Added 1960x840 (21:9) resolution.
+- Added 2096x900 (21:9) resolution.
+- Added 2304x960 (21:9) resolution.
+- Added 2560x1080 (21:9) resolution.
+- Replaced the display timing for 1920x1080 that now works fine with vga and dvi/hdmi.
 - Fixed Alt-tab crashing in OpenGL games
 - Trilinear texture filtering enabled (with a toggle). Still has to be set in-game.
-- MiniVdd driver minor fix that enables higher resolutions
-- Renamed MesaFx texts in 3dfxTools to Opengl, to avoid confusion
+- Renamed MesaFx texts in 3dfxTools to Opengl, to avoid confusion.
+- MiniVdd driver minor fix that enables higher resolutions.
+- One Glide fix, that fixes Ignition with 3dfx patch v3 locking-up after language select.
 
 Release Notes
 =======================================================================
