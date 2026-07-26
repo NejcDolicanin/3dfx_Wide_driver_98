@@ -12,16 +12,14 @@ OpenGL Driver Version:			MesaFx 7.4.4.0		(v0.75)	(OpenGL ICD)
 Release Notes
 =======================================================================
 Version 1.4
-- Added 1960x840 (21:9) resolution.
-- Added 2096x900 (21:9) resolution.
-- Added 2304x960 (21:9) resolution.
-- Added 2560x1080 (21:9) resolution.
+- Added 1960x840, 2096x900, 2304x960, 2560x1080 (21:9) resolutions.
 - Replaced the display timing for 1920x1080 that now works fine with vga and dvi/hdmi.
 - Fixed Alt-tab crashing in OpenGL games
 - Trilinear texture filtering enabled (with a toggle). Still has to be set in-game.
 - Renamed MesaFx texts in 3dfxTools to Opengl, to avoid confusion.
 - MiniVdd driver minor fix that enables higher resolutions.
-- One Glide fix, that fixes Ignition with 3dfx patch v3 locking-up after language select.
+- One Glide fix, that fixes Ignition with 3dfx patch ver3 locking-up after language select.
+- Fixed ScreenCapture not working, added DAC gama capture as was in koolsmokys version
 
 Release Notes
 =======================================================================
