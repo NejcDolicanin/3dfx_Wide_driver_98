@@ -1,7 +1,7 @@
 # 3dfx Wide driver
 3dfx Wide driver for Windows 98
 
-![IMG_20250811_230445_tigr](https://github.com/user-attachments/assets/cf841022-f841-482c-bf3f-4d92b27e7661)
+<img width="2448" height="1843" alt="IMG_20260726_175645" src="https://github.com/user-attachments/assets/66d7033f-4d5c-4390-ae55-e4a9fac18864" />
 
 For Voodoo 4/5 video cards, on Windows 98!
 <br/> <br/>
@@ -16,13 +16,15 @@ More informations, benchmarks... Are avaliable here:
 ## Quick additional informations
 ### Glide resolution override
 Glide override will force the selected resolution in glide games, example 1920x800 or 1920x1080. \
-<img width="437" height="468" alt="slika1" src="https://github.com/user-attachments/assets/c330b942-07b3-4fdc-bf5f-9fd982bce76f" />
+<img width="436" height="468" alt="GlideOverride" src="https://github.com/user-attachments/assets/ae6b5bcd-c0dc-422a-9994-f46e67b7e4e2" />
+
 
 As of now, the only games, that seem to work with it, are Unreal engine games (Unreal, Unreal tournament, DeusEx, Rune, Undying...).
 
-### MesaFx/OpenGl overrides
+### OpenGl overrides
 MesaFx will default OpenGl games to 32bit if the game doesnt specificly sets it, most Quake 2 engine games! So its usefull there if you want to play in 16bit. \
-<img width="437" height="468" alt="slika4" src="https://github.com/user-attachments/assets/45f652ad-250f-4beb-a2bf-e413545bcbc3" />
+<img width="436" height="468" alt="OpenGLForce" src="https://github.com/user-attachments/assets/cccdce03-b135-444b-9adb-47ce979d60d5" />
+
 
 ### Refresh rate toggle
 Can be used to force higher refresh rate. \
@@ -39,7 +41,14 @@ It will try to get the highest refresh rate. So if you have it set at 144hz and 
 If another resolution has 120hz, it will use that. If you max out at 60hz, it will use that. \
 Default is 60hz.
 
+### OpenGL Enable Trilinear texture filtering
+Will disable multitexturing and enable Trilinear texture filtering support. \
+Its a harware limitation with only 2 TextureMappingUnits. You either have Multitexturing OR single-pass Trilinear. 
+<img width="437" height="469" alt="Trilinear" src="https://github.com/user-attachments/assets/aeec4c37-e481-44d6-bff6-4a5c63c4d855" />
 
+Trilinear texture filtering <b>still has to be enabled in-game</b> either in games settings or setting texture filtering to GL_LINEAR_MIPMAP_LINEAR.
+
+<b>Remember to disable it back, if not using Trilinear</b>, since multitexturing stays disabled with this feature enabled, for all filtering modes in OpenGL!
 
 
 
