@@ -19,7 +19,9 @@ Version 1.4
 - Renamed MesaFx texts in 3dfxTools to Opengl, to avoid confusion.
 - MiniVdd driver minor fix that enables higher resolutions.
 - One Glide fix, that fixes Ignition with 3dfx patch ver3 locking-up after language select.
-- Fixed ScreenCapture not working, added DAC gama capture as was in koolsmokys version
+- Fixed ScreenCapture not working, added DAC gama capture as was in koolsmokys version.
+  F12 is now set as the Screen capture key by default.
+- Previous SOF corrupted textures fix redone in a more propper way. No more texture corruption.
 
 Release Notes
 =======================================================================
