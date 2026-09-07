@@ -21,6 +21,17 @@ Glide override will force the selected resolution in glide games, example 1920x8
 
 As of now, the only games, that seem to work with it, are Unreal engine games (Unreal, Unreal tournament, DeusEx, Rune, Undying...).
 
+#### Additional games that are patched in the driver
+See <b>\WidescreenPatches</b> folder in the driver for per-game information.
+<br/>
+<b>PATCH WILL ONLY WORK WITH THE CORRECT VERSION OF THE GAME!!!</b>
+- Diablo II Lord of Destruction
+- Driver
+- Gta 2
+- Ignition
+- MDK
+- Turok Dinosaur Hunter
+
 ### OpenGl overrides
 MesaFx will default OpenGl games to 32bit if the game doesnt specificly sets it, most Quake 2 engine games! So its usefull there if you want to play in 16bit. \
 <img width="436" height="468" alt="OpenGLForce" src="https://github.com/user-attachments/assets/cccdce03-b135-444b-9adb-47ce979d60d5" />
