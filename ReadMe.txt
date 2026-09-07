@@ -12,7 +12,7 @@ OpenGL Driver Version:			MesaFx 7.4.4.0		(v0.76)	(OpenGL ICD)
 Release Notes
 =======================================================================
 Version 1.5
-- Game Ignition fix, that caused ficlering of UI elements and eventually locked-up.
+- Game Ignition fix, that caused flickering of UI elements and eventually locked-up.
 - Game Turok fix, reflections on the water were black.
 - Added 640x480 and 800x600 equivalent resolutions for other aspect ratios
   - 768x480, 1144x480, 960x600, 1064x600, 1400x600
