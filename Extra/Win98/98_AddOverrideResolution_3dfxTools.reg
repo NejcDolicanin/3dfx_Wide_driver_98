@@ -11,21 +11,21 @@ REGEDIT4
 @ = ""
 "Control" = "Combo"
 "Default" = "0"
-;NOTE: keep this List string under 255 chars - 3dfx Tools truncates at a 256 byte buffer
-"List" = "Disabled,1024x768,1280x720,1280x800,1280x1024,1360x768,1440x900,1600x900,1600x1200,1680x720,1680x1050,1792x768,1920x800,1920x1080,1920x1200,1960x840,2096x900,2304x960,2560x1080"
-"Tweak Map" = "0,12,24,25,13,26,27,28,14,29,30,31,32,33,34,35,36,37,38"
+;NOTE: keep this List string under 255 chars (currently 227) - 3dfx Tools truncates at a 256 byte buffer
+"List" = "Disabled,768x480,856x480,960x600,1064x600,1144x480,1400x600,1024x768,1280x720,1280x800,1280x1024,1360x768,1440x900,1600x900,1600x1200,1680x720,1680x1050,1792x768,1920x800,1920x1080,1920x1200,1960x840,2096x900,2304x960,2560x1080"
+"Tweak Map" = "0,39,10,40,41,42,43,12,24,25,13,26,27,28,14,29,30,31,32,33,34,35,36,37,38"
 "Tweak Value" = "FX_GLIDE_OVERRIDE_RESOLUTION"
 "Help" = "This will force a single resolution. Experimental!!! Will not work in every game! FOV may need to be adjusted in-game."
 "Value" = "0"
 
 ;For IniFile
 ;HKR,Glide\"Glide Override Resolution",Control,,"Combo"
-;HKR,Glide\"Glide Override Resolution",List,,"Disabled,1024x768,1280x720,1280x800,1280x1024,1360x768,1440x900,1600x900,1600x1200,1680x720,1680x1050,1792x768,1920x800,1920x1080,1920x1200,1960x840,2096x900,2304x960,2560x1080"
+;HKR,Glide\"Glide Override Resolution",List,,"Disabled,768x480,856x480,960x600,1064x600,1144x480,1400x600,1024x768,1280x720,1280x800,1280x1024,1360x768,1440x900,1600x900,1600x1200,1680x720,1680x1050,1792x768,1920x800,1920x1080,1920x1200,1960x840,2096x900,2304x960,2560x1080"
 ;HKR,Glide\"Glide Override Resolution",Value,,"0"
 ;HKR,Glide\"Glide Override Resolution",Default,,"0"
 ;;;HKR,Glide\"Glide Override Resolution","Tweak Value",,"FX_GLIDE_SWAPPENDINGCOUNT"
 ;HKR,Glide\"Glide Override Resolution","Tweak Value",,"FX_GLIDE_OVERRIDE_RESOLUTION"
-;HKR,Glide\"Glide Override Resolution","Tweak Map",,"0,12,24,25,13,26,27,28,14,29,30,31,32,33,34,35,36,37,38"
+;HKR,Glide\"Glide Override Resolution","Tweak Map",,"0,39,10,40,41,42,43,12,24,25,13,26,27,28,14,29,30,31,32,33,34,35,36,37,38"
 ;;;HKR,Glide\"Glide Override Resolution","Tweak Map",,"0,1,2,3"
 ;HKR,Glide\"Glide Override Resolution","Help",,"This will force a single resolution. Experimental!!! Will not work in every game! FOV may need to be adjusted in-game."
 ;;;HKR,Glide,FX_GLIDE_SWAPPENDINGCOUNT,,"1"

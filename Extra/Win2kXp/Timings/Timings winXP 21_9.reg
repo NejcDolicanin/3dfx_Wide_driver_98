@@ -1,6 +1,83 @@
 REGEDIT4
 
 ;Windows Registry Editor Version 5.00
+
+;21:9
+;1144x480  (Diablo II 640x480 tier)
+;Modes
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\MODES\8\1144,480]
+@ = "60,75,85,100,120,144"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\MODES\16\1144,480]
+@ = ""
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\MODES\32\1144,480]
+@ = ""
+;Timings
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1144,480]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1144,480\60Hz]
+@ = "1304,1192,1224,499,483,493,8,39040000,6000,8,15115"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1144,480\75Hz]
+@ = "1304,1192,1224,499,483,493,8,48800000,7500,8,17591"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1144,480\85Hz]
+@ = "1304,1192,1224,500,483,493,8,55420000,8500,8,19254"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1144,480\100Hz]
+@ = "1304,1192,1224,504,483,493,8,65720000,10000,8,21788"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1144,480\120Hz]
+@ = "1304,1192,1224,509,483,493,8,79650000,12000,8,25186"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1144,480\144Hz]
+@ = "1304,1192,1224,515,483,493,8,96700000,14400,8,29297"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+;21:9
+;1400x600  (Diablo II 800x600 tier)
+;Modes
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\MODES\8\1400,600]
+@ = "60,75,85,100,120,144"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\MODES\16\1400,600]
+@ = ""
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\MODES\32\1400,600]
+@ = ""
+;Timings
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1400,600]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1400,600\60Hz]
+@ = "1560,1448,1480,619,603,613,8,57940000,6000,8,18133"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1400,600\75Hz]
+@ = "1560,1448,1480,622,603,613,8,72770000,7500,8,21119"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1400,600\85Hz]
+@ = "1560,1448,1480,625,603,613,8,82880000,8500,8,23133"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1400,600\100Hz]
+@ = "1560,1448,1480,629,603,613,8,98120000,10000,8,26161"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1400,600\120Hz]
+@ = "1560,1448,1480,636,603,613,8,119060000,12000,8,30262"
+"Supported" = "BPP+8+16+32,DDRAW"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\1400,600\144Hz]
+@ = "1560,1448,1480,643,603,613,8,144440000,14400,8,35207"
+"Supported" = "BPP+8+16+32,DDRAW"
+
 ;21:9
 ;1680x720
 ;Modes
@@ -213,3 +290,30 @@ REGEDIT4
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\2560,1080\70Hz]
 @ = "2720,2608,2640,1111,1083,1093,8,211700000,7000,8,39441"
 "Supported" = "BPP+8+16+32,DDRAW"
+
+;=== TEST: native panel mode, 30Hz ===
+; 3440x1440 at 30Hz -- the panel's own resolution rather than a 600-line
+; mode.  Registry only for now: Glide has no 3440x1440 in _resTable, so
+; this is a Windows desktop mode to prove the timing syncs before any
+; driver tables are touched.
+;
+; CVT-RB, same recipe as the rest: H blank 160 (48/32/80), V front 3,
+; V sync 10, flags 8.  43.83 kHz / 157.79 MHz -- modest for the RAMDAC.
+; 30Hz is the unknown: many panels refuse it outright.
+;3440x1440
+;Modes
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\MODES\8\3440,1440]
+@ = "30"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\MODES\16\3440,1440]
+@ = ""
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\MODES\32\3440,1440]
+@ = ""
+;Timings
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\3440,1440]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3dfxvs\Device0\TIMINGS\3440,1440\30Hz]
+@ = "3600,3488,3520,1461,1443,1453,8,157790000,3000,8,33760"
+"Supported" = "BPP+8+16+32,DDRAW"
+

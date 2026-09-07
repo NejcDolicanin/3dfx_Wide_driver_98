@@ -1,0 +1,26 @@
+REGEDIT4
+
+; GTA2 fullscreen resolution -> 1920x1080
+;
+; REGEDIT4, not "Windows Registry Editor Version 5.00" -- Win98's regedit will
+; not import the 5.00 format.
+;
+; These are REG_DWORD.  The game reads them with a 4-byte RegQueryValueExA into
+; a DWORD (confirmed at gta2 manager.exe:0x41448a), so a string value silently
+; fails.  .reg files have no "decimal:" prefix -- dword: values are ALWAYS hex.
+;
+;   0x780 = 1920
+;   0x438 = 1080
+;
+; This must match the driver's "Glide Override Resolution" setting.  DMAGlide
+; only ever has one patched mode slot, so the game can only open the resolution
+; the override names.
+;
+; NOTE: the game resets these to 640x480 and writes that back if a mode fails to
+; initialise (the fallback path at 0x5d2314), so re-check after any bad launch.
+;
+; To go back: 0x280 (640) and 0x1e0 (480).
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\DMA Design Ltd\GTA2\Screen]
+"full_width"=dword:00000780
+"full_height"=dword:00000438

@@ -1,13 +1,31 @@
 Voodoo4/5 Wide Driver
-Version 1.4
+Version 1.5
 
 **************************************************************************************************************************************
 Voodoo Series Driver Kit:			1.0
 Voodoo Series Win9x 2D/3D Display Drivers:	4.13.01.0028
-Glide 2.X Driver:				1.00.01.0106		(glide2->glide3 wrapper)
-Glide 3.X Driver:				3.10.00.40407		(Glide sourceForge project)
-OpenGL Driver Version:			MesaFx 7.4.4.0		(v0.75)	(OpenGL ICD)
+Glide 2.X Driver:				1.00.01.0107		(glide2->glide3 wrapper)
+Glide 3.X Driver:				3.10.00.40408		(Glide sourceForge project)
+OpenGL Driver Version:			MesaFx 7.4.4.0		(v0.76)	(OpenGL ICD)
 **************************************************************************************************************************************
+
+Release Notes
+=======================================================================
+Version 1.5
+- Game Ignition fix, that caused ficlering of UI elements and eventually locked-up.
+- Game Turok fix, reflections on the water were black.
+- Added 640x480 and 800x600 equivalent resolutions for other aspect ratios
+  - 768x480, 1144x480, 960x600, 1064x600, 1400x600
+
+- Widescreen patches for games
+  - Gta 2 (v10.3) 
+  - Turok (Retail, not 3dfx rush version)
+  - Ignition (3dfx patch ver2 and ver3)
+  - MDK (retail + 3dfx patch + nocd)
+  - Driver (Retail + 2.1 patch + 2.1 fix)
+  - Diablo II retail + LOD expansion + patch v1.13d
+  - Additional HOR+ patched .exe for Aliens vs Predator Gold
+
 
 Release Notes
 =======================================================================

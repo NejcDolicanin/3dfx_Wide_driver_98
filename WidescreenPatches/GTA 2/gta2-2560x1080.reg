@@ -1,0 +1,20 @@
+REGEDIT4
+
+; GTA2 fullscreen resolution -> 2560x1080 (21:9)
+;
+; REGEDIT4, not "Windows Registry Editor Version 5.00", so Win98 regedit
+; will import it.  These are REG_DWORD: the game reads them with a 4-byte
+; RegQueryValueExA into a DWORD, so string values would silently fail.
+;
+;   0xa00 = 2560
+;   0x438 = 1080
+;
+; NOTE: the game resets these to 640x480 and writes that back if a mode fails
+; to initialise (the fallback path at 0x5d2314), so re-check them after any
+; bad launch.
+;
+; To go back: 0x280 (640) and 0x1e0 (480).
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\DMA Design Ltd\GTA2\Screen]
+"full_width"=dword:00000a00
+"full_height"=dword:00000438

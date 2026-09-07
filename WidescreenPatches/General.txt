@@ -1,0 +1,15 @@
+If a game needs something or has addditional options it has its own folder.
+- Aliens vs Predator
+- Gta 2
+- Turok
+- MDK
+
+Glide games that work, without any additional files.
+- Diablo II
+- Driver
+- Ignition (3dfx patch ver2 and ver3)
+- Rune
+- Unreal tournament
+- Unreal
+
+See games folder if there are any additional information and which version to use.
