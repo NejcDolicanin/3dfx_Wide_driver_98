@@ -1,5 +1,5 @@
 Voodoo4/5 Wide Driver
-Version 1.5
+Version 1.6
 
 **************************************************************************************************************************************
 Voodoo Series Driver Kit:			1.0
@@ -8,6 +8,13 @@ Glide 2.X Driver:				1.00.01.0107		(glide2->glide3 wrapper)
 Glide 3.X Driver:				3.10.00.40408		(Glide sourceForge project)
 OpenGL Driver Version:			MesaFx 7.4.4.0		(v0.76)	(OpenGL ICD)
 **************************************************************************************************************************************
+
+Release Notes
+=======================================================================
+Version 1.6
+- Removed 120hz refresh from 1960x840
+- Removed the 120hz limit from 3DFX16VS.DRV, so now 144hz can be set if the monitor supports it.
+- Diablo 2 further widescreen patch fixes
 
 Release Notes
 =======================================================================
