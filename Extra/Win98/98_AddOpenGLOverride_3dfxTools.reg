@@ -8,7 +8,7 @@ REGEDIT4
 "FX_GL_FORCE_16BPP_TEXTURES" = "0"
 
 ;Folder with all entries
-[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\GLIDE\OpenGL Force rendering depth 16/32bit]
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\GLIDE\OpenGL Rendering depth]
 @ = ""
 "Control" = "Combo"
 "Default" = "0"
@@ -19,7 +19,7 @@ REGEDIT4
 "Value" = "0"
 
 ;Folder with all entries
-[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\GLIDE\OpenGL Force textures depth 16/32bit]
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\GLIDE\OpenGL Textures depth]
 @ = ""
 "Control" = "Combo"
 "Default" = "0"
@@ -30,21 +30,21 @@ REGEDIT4
 "Value" = "0"
 
 ;;For IniFile - Override rendering depth 16/32bit
-;HKR,Glide\"OpenGL Force rendering depth 16/32bit",Control,,"Combo"
-;HKR,Glide\"OpenGL Force rendering depth 16/32bit",List,,"Default - Use desktop,Force 16bit,Force 32bit"
-;HKR,Glide\"OpenGL Force rendering depth 16/32bit",Value,,"0"
-;HKR,Glide\"OpenGL Force rendering depth 16/32bit",Default,,"0"
-;HKR,Glide\"OpenGL Force rendering depth 16/32bit","Tweak Value",,"FX_GL_FORCE_16BPP_PIX"
-;HKR,Glide\"OpenGL Force rendering depth 16/32bit","Tweak Map",,"*,1,2"
-;HKR,Glide\"OpenGL Force rendering depth 16/32bit","Help",,"Forces 16/32bit rendering - This will only affect OpenGl games"
+;HKR,Glide\"OpenGL Rendering depth",Control,,"Combo"
+;HKR,Glide\"OpenGL Rendering depth",List,,"Default - Use desktop,Force 16bit,Force 32bit"
+;HKR,Glide\"OpenGL Rendering depth",Value,,"0"
+;HKR,Glide\"OpenGL Rendering depth",Default,,"0"
+;HKR,Glide\"OpenGL Rendering depth","Tweak Value",,"FX_GL_FORCE_16BPP_PIX"
+;HKR,Glide\"OpenGL Rendering depth","Tweak Map",,"*,1,2"
+;HKR,Glide\"OpenGL Rendering depth","Help",,"Forces 16/32bit rendering - This will only affect OpenGl games"
 ;HKR,Glide,FX_GL_FORCE_16BPP_PIX,,"0"
 
 ;;For IniFile - Override textures depth 16/32bit
-;HKR,Glide\"OpenGL Force textures depth 16/32bit",Control,,"Combo"
-;HKR,Glide\"OpenGL Force textures depth 16/32bit",List,,"Default - Use desktop,Force 16bit,Force 32bit"
-;HKR,Glide\"OpenGL Force textures depth 16/32bit",Value,,"0"
-;HKR,Glide\"OpenGL Force textures depth 16/32bit",Default,,"0"
-;HKR,Glide\"OpenGL Force textures depth 16/32bit","Tweak Value",,"FX_GL_FORCE_16BPP_TEXTURES"
-;HKR,Glide\"OpenGL Force textures depth 16/32bit","Tweak Map",,"*,1,2"
-;HKR,Glide\"OpenGL Force textures depth 16/32bit","Help",,"Forces 16/32bit textures - This will only affect OpenGl games"
+;HKR,Glide\"OpenGL Textures depth",Control,,"Combo"
+;HKR,Glide\"OpenGL Textures depth",List,,"Default - Use desktop,Force 16bit,Force 32bit"
+;HKR,Glide\"OpenGL Textures depth",Value,,"0"
+;HKR,Glide\"OpenGL Textures depth",Default,,"0"
+;HKR,Glide\"OpenGL Textures depth","Tweak Value",,"FX_GL_FORCE_16BPP_TEXTURES"
+;HKR,Glide\"OpenGL Textures depth","Tweak Map",,"*,1,2"
+;HKR,Glide\"OpenGL Textures depth","Help",,"Forces 16/32bit textures - This will only affect OpenGl games"
 ;HKR,Glide,FX_GL_FORCE_16BPP_TEXTURES,,"0"
