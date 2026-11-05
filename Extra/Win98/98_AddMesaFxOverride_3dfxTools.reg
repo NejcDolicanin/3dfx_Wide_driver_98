@@ -4,19 +4,8 @@ REGEDIT4
 
 ;Glide variable holder with default value "1"
 [HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\GLIDE]
-"FX_MESA_FORCE_16BPP_TEXTURES" = "1"
 "FX_MESA_FORCE_16BPP_PIX" = "1"
-
-;Folder with all entries
-[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\GLIDE\OpenGL Force 16bit textures]
-@ = ""
-"Control" = "Combo"
-"Default" = "1"
-"List" = "Disable,Enable"
-"Tweak Map" = "*,1"
-"Tweak Value" = "FX_MESA_FORCE_16BPP_TEXTURES"
-"Help" = "Forces 16bit textures, default MesaFx is 32bit - This will only affect OpenGl games"
-"Value" = "1"
+"FX_MESA_FORCE_16BPP_TEXTURES" = "1"
 
 ;Folder with all entries
 [HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\GLIDE\OpenGL Force 16bit rendering]
@@ -29,15 +18,16 @@ REGEDIT4
 "Help" = "Forces 16bit rendering, default MesaFx is 32bit - This will only affect OpenGl games"
 "Value" = "1"
 
-;;For IniFile - Override 16bit textures
-;HKR,Glide\"OpenGL Force 16bit textures",Control,,"Combo"
-;HKR,Glide\"OpenGL Force 16bit textures",List,,"Disable,Enable"
-;HKR,Glide\"OpenGL Force 16bit textures",Value,,"1"
-;HKR,Glide\"OpenGL Force 16bit textures",Default,,"1"
-;HKR,Glide\"OpenGL Force 16bit textures","Tweak Value",,"FX_MESA_FORCE_16BPP_TEXTURES"
-;HKR,Glide\"OpenGL Force 16bit textures","Tweak Map",,"*,1"
-;HKR,Glide\"OpenGL Force 16bit textures","Help",,"Forces 16bit textures, default MesaFx is 32bit - This will only affect OpenGl games"
-;HKR,Glide,FX_MESA_FORCE_16BPP_TEXTURES,,"1"
+;Folder with all entries
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\GLIDE\OpenGL Force 16bit textures]
+@ = ""
+"Control" = "Combo"
+"Default" = "1"
+"List" = "Disable,Enable"
+"Tweak Map" = "*,1"
+"Tweak Value" = "FX_MESA_FORCE_16BPP_TEXTURES"
+"Help" = "Forces 16bit textures, default MesaFx is 32bit - This will only affect OpenGl games"
+"Value" = "1"
 
 ;;For IniFile - Override 16bit rendering
 ;HKR,Glide\"OpenGL Force 16bit rendering",Control,,"Combo"
@@ -48,3 +38,14 @@ REGEDIT4
 ;HKR,Glide\"OpenGL Force 16bit rendering","Tweak Map",,"*,1"
 ;HKR,Glide\"OpenGL Force 16bit rendering","Help",,"Forces 16bit rendering, default MesaFx is 32bit - This will only affect OpenGl games"
 ;HKR,Glide,FX_MESA_FORCE_16BPP_PIX,,"1"
+
+;;For IniFile - Override 16bit textures
+;HKR,Glide\"OpenGL Force 16bit textures",Control,,"Combo"
+;HKR,Glide\"OpenGL Force 16bit textures",List,,"Disable,Enable"
+;HKR,Glide\"OpenGL Force 16bit textures",Value,,"1"
+;HKR,Glide\"OpenGL Force 16bit textures",Default,,"1"
+;HKR,Glide\"OpenGL Force 16bit textures","Tweak Value",,"FX_MESA_FORCE_16BPP_TEXTURES"
+;HKR,Glide\"OpenGL Force 16bit textures","Tweak Map",,"*,1"
+;HKR,Glide\"OpenGL Force 16bit textures","Help",,"Forces 16bit textures, default MesaFx is 32bit - This will only affect OpenGl games"
+;HKR,Glide,FX_MESA_FORCE_16BPP_TEXTURES,,"1"
+
