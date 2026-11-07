@@ -1,0 +1,29 @@
+REGEDIT4
+
+;Trilinear filtering toggle for 3dfx Tools in glide section
+
+;Glide variable holder with default value "0"
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\GLIDE]
+"FX_GL_TRILINEAR_ENABLED" = "0"
+
+;Folder with all entries
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\GLIDE\OpenGL Trilinear texture filtering]
+@ = ""
+"Control" = "Combo"
+"Default" = "0"
+"List" = "Bilinear fallback,LOD Dithering,Trilinear"
+"Tweak Map" = "0,1,2"
+"Tweak Value" = "FX_GL_TRILINEAR_ENABLED"
+"Help" = "Trilinear texture filtering mode. Fallback to Bilinear filtering, LOD Dither between mips, Allow Trilinear if requested. Trilinear option turns multitexturing off."
+"Value" = "0"
+
+;For IniFile
+;Trilinear filtering toggle for 3dfx Tools in glide section
+;HKR,Glide\"OpenGL Trilinear texture filtering",Control,,"Combo"
+;HKR,Glide\"OpenGL Trilinear texture filtering",List,,"Bilinear fallback,LOD Dithering,Trilinear"
+;HKR,Glide\"OpenGL Trilinear texture filtering",Value,,"0"
+;HKR,Glide\"OpenGL Trilinear texture filtering",Default,,"0"
+;HKR,Glide\"OpenGL Trilinear texture filtering","Tweak Value",,"FX_GL_TRILINEAR_ENABLED"
+;HKR,Glide\"OpenGL Trilinear texture filtering","Tweak Map",,"0,1,2"
+;HKR,Glide\"OpenGL Trilinear texture filtering","Help",,"Trilinear texture filtering mode. Fallback to Bilinear filtering, LOD Dither between mips, Allow Trilinear if requested. Trilinear option turns multitexturing off."
+;HKR,Glide,FX_GL_TRILINEAR_ENABLED,,"0"
