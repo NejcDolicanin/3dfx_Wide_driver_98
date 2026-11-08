@@ -15,6 +15,7 @@ Version 1.6
 - Removed 120hz refresh from 1960x840
 - Removed the 120hz limit from 3DFX16VS.DRV, so now 144hz can be set if the monitor supports it.
 - Fixed taskbar icons not visible (and other atifacts on desktop) when returning to the desktop from a game, and using higher than 2048x width resolution (ex 2560x1080) at 32bit, fix in 3dfx16vs.drv
+- Fixed 3/4 image smearing in glide, when using higher than 2048x width resolution (ex 2560x1080) at 32bit
 - Diablo 2 further widescreen patch fixes
 - Diablo and Battlezone widescreen patch in WidescreenPatches
 - New OpenGL RE-ICD
