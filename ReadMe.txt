@@ -18,7 +18,8 @@ Version 1.6
 - Fixed 3/4 image smearing in glide, when using higher than 2048x width resolution (ex 2560x1080) at 32bit
 - Diablo 2 further widescreen patch fixes
 - Diablo and Battlezone widescreen patch in WidescreenPatches
-- New OpenGL RE-ICD
+- New OpenGL RE-ICD, with all the fixes and upgrades I could find and solve.
+- OpenGL s3tc/dxtn compressed textures now implement the required code in the ICD, not using dxtn.dll anymore. Leaving it in for MesaFx use.
 
 Release Notes
 =======================================================================
