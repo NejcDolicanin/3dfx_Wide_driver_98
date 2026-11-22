@@ -1,0 +1,28 @@
+REGEDIT4
+
+;OpenGL version of the 3dfx OpenGL ICD, for 3dfx Tools in glide section
+
+;Glide variable holder with default value "1.1"
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\GLIDE]
+"FX_GL_VERSION" = "1.1"
+
+;Folder with all entries
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Display\0000\GLIDE\OpenGL Version]
+@ = ""
+"Control" = "Combo"
+"Default" = "0"
+"List" = "OpenGL 1.1 (Default),OpenGL 1.2,OpenGL 1.3,OpenGL 1.4,OpenGL 1.5"
+"Tweak Map" = "1.1,1.2,1.3,1.4,1.5"
+"Tweak Value" = "FX_GL_VERSION"
+"Help" = "OpenGL version the 3dfx ICD reports and supports. 1.1 is the original and the fastest. 1.2 to 1.5 add newer functions for games that require them. This will only affect OpenGl games"
+"Value" = "0"
+
+;;For IniFile - OpenGL ICD version
+;HKR,Glide\"OpenGL Version",Control,,"Combo"
+;HKR,Glide\"OpenGL Version",List,,"OpenGL 1.1 (Default),OpenGL 1.2,OpenGL 1.3,OpenGL 1.4,OpenGL 1.5"
+;HKR,Glide\"OpenGL Version",Value,,"0"
+;HKR,Glide\"OpenGL Version",Default,,"0"
+;HKR,Glide\"OpenGL Version","Tweak Value",,"FX_GL_VERSION"
+;HKR,Glide\"OpenGL Version","Tweak Map",,"1.1,1.2,1.3,1.4,1.5"
+;HKR,Glide\"OpenGL Version","Help",,"OpenGL version the 3dfx ICD reports and supports. 1.1 is the original and the fastest. 1.2 to 1.5 add newer functions for games that require them. This will only affect OpenGl games"
+;HKR,Glide,FX_GL_VERSION,,"1.1"
