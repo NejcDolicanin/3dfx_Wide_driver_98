@@ -15,7 +15,7 @@ REGEDIT4
 "List" = "Default - Use desktop,Force 16bit,Force 32bit"
 "Tweak Map" = "*,1,2"
 "Tweak Value" = "FX_GL_FORCE_16BPP_PIX"
-"Help" = "Forces 16/32bit rendering - This will only affect OpenGl games"
+"Help" = "Forces 16/32bit rendering - This will only affect OpenGl games. With MesaFx only Force 16bit changes anything, its default is 32bit"
 "Value" = "0"
 
 ;Folder with all entries
@@ -26,7 +26,7 @@ REGEDIT4
 "List" = "Default - Use desktop,Force 16bit,Force 32bit"
 "Tweak Map" = "*,1,2"
 "Tweak Value" = "FX_GL_FORCE_16BPP_TEXTURES"
-"Help" = "Forces 16/32bit textures - This will only affect OpenGl games"
+"Help" = "Forces 16/32bit textures - This will only affect OpenGl games. With MesaFx only Force 16bit changes anything, its default is 32bit"
 "Value" = "0"
 
 ;;For IniFile - Override rendering depth 16/32bit
@@ -36,7 +36,7 @@ REGEDIT4
 ;HKR,Glide\"OpenGL Color Depth",Default,,"0"
 ;HKR,Glide\"OpenGL Color Depth","Tweak Value",,"FX_GL_FORCE_16BPP_PIX"
 ;HKR,Glide\"OpenGL Color Depth","Tweak Map",,"*,1,2"
-;HKR,Glide\"OpenGL Color Depth","Help",,"Forces 16/32bit rendering - This will only affect OpenGl games"
+;HKR,Glide\"OpenGL Color Depth","Help",,"Forces 16/32bit rendering - This will only affect OpenGl games. With MesaFx only Force 16bit changes anything, its default is 32bit"
 ;HKR,Glide,FX_GL_FORCE_16BPP_PIX,,"0"
 
 ;;For IniFile - Override textures depth 16/32bit
@@ -46,6 +46,6 @@ REGEDIT4
 ;HKR,Glide\"OpenGL Textures Depth",Default,,"0"
 ;HKR,Glide\"OpenGL Textures Depth","Tweak Value",,"FX_GL_FORCE_16BPP_TEXTURES"
 ;HKR,Glide\"OpenGL Textures Depth","Tweak Map",,"*,1,2"
-;HKR,Glide\"OpenGL Textures Depth","Help",,"Forces 16/32bit textures - This will only affect OpenGl games"
+;HKR,Glide\"OpenGL Textures Depth","Help",,"Forces 16/32bit textures - This will only affect OpenGl games. With MesaFx only Force 16bit changes anything, its default is 32bit"
 ;HKR,Glide,FX_GL_FORCE_16BPP_TEXTURES,,"0"
 

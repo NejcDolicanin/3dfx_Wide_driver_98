@@ -14,7 +14,7 @@ REGEDIT4
 "List" = "Bilinear fallback,LOD Dithering,Trilinear"
 "Tweak Map" = "0,1,2"
 "Tweak Value" = "FX_GL_TRILINEAR_ENABLED"
-"Help" = "Trilinear texture filtering mode. Fallback to Bilinear filtering, LOD Dither between mips, Allow Trilinear if requested. Trilinear option turns multitexturing off."
+"Help" = "Trilinear texture filtering mode. Fallback to Bilinear filtering, LOD Dither between mips, Allow Trilinear if requested. Trilinear option turns multitexturing off. MesaFx has no LOD Dithering, there it is the same as Bilinear."
 "Value" = "0"
 
 ;For IniFile
@@ -25,5 +25,5 @@ REGEDIT4
 ;HKR,Glide\"OpenGL Trilinear texture filtering",Default,,"0"
 ;HKR,Glide\"OpenGL Trilinear texture filtering","Tweak Value",,"FX_GL_TRILINEAR_ENABLED"
 ;HKR,Glide\"OpenGL Trilinear texture filtering","Tweak Map",,"0,1,2"
-;HKR,Glide\"OpenGL Trilinear texture filtering","Help",,"Trilinear texture filtering mode. Fallback to Bilinear filtering, LOD Dither between mips, Allow Trilinear if requested. Trilinear option turns multitexturing off."
+;HKR,Glide\"OpenGL Trilinear texture filtering","Help",,"Trilinear texture filtering mode. Fallback to Bilinear filtering, LOD Dither between mips, Allow Trilinear if requested. Trilinear option turns multitexturing off. MesaFx has no LOD Dithering, there it is the same as Bilinear."
 ;HKR,Glide,FX_GL_TRILINEAR_ENABLED,,"0"
