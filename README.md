@@ -16,7 +16,7 @@ More informations, benchmarks... Are avaliable here:
 ## Quick additional informations
 ### Glide resolution override
 Glide override will force the selected resolution in glide games, example 1920x800 or 1920x1080. \
-<img width="436" height="468" alt="GlideOverride" src="https://github.com/user-attachments/assets/ae6b5bcd-c0dc-422a-9994-f46e67b7e4e2" />
+<img width="437" height="469" alt="Driver5" src="https://github.com/user-attachments/assets/ca6cdfa0-dc03-4c86-a8bd-3bc3fc65b517" />
 
 
 As of now, the only games, that seem to work with it, are Unreal engine games (Unreal, Unreal tournament, DeusEx, Rune, Undying...).
@@ -32,10 +32,9 @@ See <b>\WidescreenPatches</b> folder in the driver for per-game information.
 - MDK
 - Turok Dinosaur Hunter
 
-### OpenGl overrides
-MesaFx will default OpenGl games to 32bit if the game doesnt specificly sets it, most Quake 2 engine games! So its usefull there if you want to play in 16bit. \
-<img width="436" height="468" alt="OpenGLForce" src="https://github.com/user-attachments/assets/cccdce03-b135-444b-9adb-47ce979d60d5" />
-
+### OpenGL overrides
+By default color and texture depth(bits) will default to whats set for the system/desktop color depth. You can force 16bit or 32bit for more control what the games do. \
+<img width="437" height="469" alt="Driver1" src="https://github.com/user-attachments/assets/0e0fcf4d-dfc7-4152-bace-8827fc1d49f7" />
 
 ### Refresh rate toggle
 Can be used to force higher refresh rate. \
@@ -55,11 +54,16 @@ Default is 60hz.
 ### OpenGL Enable Trilinear texture filtering
 Will disable multitexturing and enable Trilinear texture filtering support. \
 Its a harware limitation with only 2 TextureMappingUnits. You either have Multitexturing OR single-pass Trilinear. 
-<img width="437" height="469" alt="Trilinear" src="https://github.com/user-attachments/assets/aeec4c37-e481-44d6-bff6-4a5c63c4d855" />
+<img width="437" height="469" alt="Driver3" src="https://github.com/user-attachments/assets/fc4323c1-5c82-4f33-9788-af15de989521" />
 
 Trilinear texture filtering <b>still has to be enabled in-game</b> either in games settings or setting texture filtering to GL_LINEAR_MIPMAP_LINEAR.
 
 <b>Remember to disable it back, if not using Trilinear</b>, since multitexturing stays disabled with this feature enabled, for all filtering modes in OpenGL!
 
+### OpenGL API Version
+By default OpenGL v1.2 featureset is enabled, this is a safe choice between speed and compatibility, most of the featureset is supported in the hardwarre. 3dfx own driver had v1.1. For more game compatibility you can enable higher versions, up to OpenGL v1.5, but since not everything is supported on the hardware, some features will run on the CPU or be advertised and "faked". So use it as a compatibility toggle if you run into issues with "newer" OpenGL games. \
+<img width="437" height="469" alt="Driver4" src="https://github.com/user-attachments/assets/531d65f1-20f6-4579-8577-cdad058d2eb1" />
 
-
+### Doom 3
+The driver can run Doom 3, set OpenGL to v1.5 and set an environment variable <b>set FX_GL_FAKE_EXTENSIONS=1</b> for the game to run. \
+<img width="1920" height="800" alt="glide_20261124_003153" src="https://github.com/user-attachments/assets/30e89188-c0c4-4ad6-8b82-eb6dcdffea9f" />
