@@ -14,7 +14,7 @@ ClassGUID={4D36E968-E325-11CE-BFC1-08002BE10318}
 Provider=%Mfg%
 ;CatalogFile=3dfxvs.cat
 ;mm/dd/yyyy
-DriverVer=07/09/2026
+DriverVer=12/27/2026
 
 [DestinationDirs]
 DefaultDestDir   = 11    ; LDID_SYS
@@ -42,7 +42,7 @@ vgartd.vxd   =1
 3dfxSpl2.dll =1
 3dfxSpl3.dll =1
 3dfxOGL.dll  =1
-dxtn.dll     =1
+;dxtn.dll     =1
 ;opengl32.dll =1
 ;3dfxICD.dll  =1
 
@@ -92,7 +92,7 @@ glide3x.dll,,,%COPY_FLAG%
 3dfxSpl2.dll,,,%COPY_FLAG%
 3dfxSpl3.dll,,,%COPY_FLAG%
 3dfxOGL.dll,,,%COPY_FLAG%
-dxtn.dll,,,%COPY_FLAG%
+;dxtn.dll,,,%COPY_FLAG%
 ;opengl32.dll,,,%COPY_FLAG%
 ;3dfxICD.dll,,,%COPY_FLAG%
 
@@ -773,7 +773,7 @@ HKR,Default\"AGP Command FIFO",Value,,"2"
 HKR,Default\"AGP Command FIFO","Tweak Map",,"-1,0,1,2"
 HKR,Default\"AGP Command FIFO","Tweak Value",,"SSTH3_AGP_XRATE"
 HKR,Default\"AGP Command FIFO","HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Advanced%20Features/3dfx%20Tools%20Advanced%20Features%20Help.htm#AGP"
-HKR,Default,SSTH3_AGP_XRATE,,"1"
+HKR,Default,SSTH3_AGP_XRATE,,"2"
 
 HKR,DEFAULT,Localisation,,"Special Settings"
 HKR,Default\"%VramOpt%",Control,,"Combo"
@@ -922,11 +922,12 @@ HKR,D3D,SSTH3_Z_CLEAR_OPTIMIZATION,,"1"
 ;Triple buffering
 HKR,D3D\"Triple Buffering",Control,,"Combo"
 HKR,D3D\"Triple Buffering",List,,"Disable,Enable"
-HKR,D3D\"Triple Buffering",Value,,"*"
-HKR,D3D\"Triple Buffering",Default,,"*"
+HKR,D3D\"Triple Buffering",Value,,"1"
+HKR,D3D\"Triple Buffering",Default,,"1"
 HKR,D3D\"Triple Buffering","Tweak Value",,"SSTH3_TRIPLE_BUFFER"
 HKR,D3D\"Triple Buffering","Tweak Map",,"*,1"
 HKR,D3D\"Triple Buffering","HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Advanced%20Features/3dfx%20Tools%20Advanced%20Features%20Help.htm#D3D_BUFFER3D"
+HKR,D3D,SSTH3_TRIPLE_BUFFER,,"1"
 
 ;Guardband clipping
 HKR,D3D\%GuardBandClippingD3D%,Control,,"Combo"
@@ -1102,12 +1103,12 @@ HKR,Glide\%32BppRendering%,"HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/A
 
 HKR,Glide\%TripleBuff%,Control,,"Combo"
 HKR,Glide\%TripleBuff%,List,,"%Disable%,%Enable%"
-HKR,Glide\%TripleBuff%,Value,,"0"
-HKR,Glide\%TripleBuff%,Default,,"0"
+HKR,Glide\%TripleBuff%,Value,,"1"
+HKR,Glide\%TripleBuff%,Default,,"1"
 HKR,Glide\%TripleBuff%,"Tweak Value",,"FX_GLIDE_ALLOC_COLOR"
 HKR,Glide\%TripleBuff%,"Tweak Map",,"-1,3"
 HKR,Glide\%TripleBuff%,"HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Advanced%20Features/3dfx%20Tools%20Advanced%20Features%20Help.htm#Glide_Buffer"
-HKR,Glide,FX_GLIDE_ALLOC_COLOR,,"-1"
+HKR,Glide,FX_GLIDE_ALLOC_COLOR,,"3"
 
 HKR,Glide\"%Vsync%",Control,,"Combo"
 HKR,Glide\"%Vsync%",List,,"Software Controlled,%Disable%,%Enable%"
@@ -1155,12 +1156,13 @@ HKR,Glide,FX_GLIDE_GBC,,"1"
 
 ;Screenshot
 HKR,Glide\"%SCAPKEY%",Control,,"Combo"
-HKR,Glide\"%SCAPKEY%",List,,"Disable,Num-Lock,Key-Pad /,Key-Pad *,F12"
-HKR,Glide\"%SCAPKEY%",Value,,"4"
-HKR,Glide\"%SCAPKEY%",Default,,"4"
+HKR,Glide\"%SCAPKEY%",List,,"Disable,Num-Lock,Key-Pad /,Key-Pad *,F12,Scroll-Lock"
+HKR,Glide\"%SCAPKEY%",Value,,"5"
+HKR,Glide\"%SCAPKEY%",Default,,"5"
 HKR,Glide\"%SCAPKEY%","Tweak Value",,"FX_GLIDE_SCREENSHOT_KEY"
-HKR,Glide\"%SCAPKEY%","Tweak Map",,"*,144,111,106,123"
-HKR,Glide\"%SCAPKEY%","HTML Help",,"hh ms-its:3dfx%20Voodoo3%20Help.chm::/Advanced%20Features/3dfx%20Tools%20Advanced%20Features%20Help.htm#Glide_CAPKEYOG"
+HKR,Glide\"%SCAPKEY%","Tweak Map",,"*,144,111,106,123,145"
+HKR,Glide\"%SCAPKEY%","HTML Help",,"hh ms-its:3dfx%20Voodoo5%20Help.chm::/Advanced%20Features/3dfx%20Tools%20Advanced%20Features%20Help.htm#Glide_CAPKEYOG"
+HKR,Glide,FX_GLIDE_SCREENSHOT_KEY,,"145"
 
 ;Glide Override resolution
 HKR,Glide\"Glide Override Resolution",Control,,"Combo"
@@ -1203,15 +1205,15 @@ HKR,Glide\"OpenGL Trilinear texture filtering","Tweak Map",,"0,1,2"
 HKR,Glide\"OpenGL Trilinear texture filtering","Help",,"Trilinear texture filtering mode. Fallback to Bilinear filtering, LOD Dither between mips, Allow Trilinear if requested. Trilinear option turns multitexturing off. MesaFx has no LOD Dithering, there it is the same as Bilinear."
 HKR,Glide,FX_GL_TRILINEAR_ENABLED,,"0"
 
-;OpenGL ICD version (FX_GL_VERSION: 1.1 original, 1.2 / 1.3 / 1.4 / 1.5 add the functions of those versions)
+;OpenGL ICD version (FX_GL_VERSION: 1.1 original, 1.2 default, 1.2 / 1.3 / 1.4 / 1.5 add the functions of those versions)
 HKR,Glide\"OpenGL Version",Control,,"Combo"
-HKR,Glide\"OpenGL Version",List,,"OpenGL 1.1 (Default),OpenGL 1.2,OpenGL 1.3,OpenGL 1.4,OpenGL 1.5"
-HKR,Glide\"OpenGL Version",Value,,"0"
-HKR,Glide\"OpenGL Version",Default,,"0"
+HKR,Glide\"OpenGL Version",List,,"OpenGL 1.1 (Original),OpenGL 1.2 (Default),OpenGL 1.3,OpenGL 1.4,OpenGL 1.5"
+HKR,Glide\"OpenGL Version",Value,,"1"
+HKR,Glide\"OpenGL Version",Default,,"1"
 HKR,Glide\"OpenGL Version","Tweak Value",,"FX_GL_VERSION"
 HKR,Glide\"OpenGL Version","Tweak Map",,"1.1,1.2,1.3,1.4,1.5"
-HKR,Glide\"OpenGL Version","Help",,"OpenGL version the 3dfx ICD reports and supports. 1.1 is the original and the fastest. 1.2 to 1.5 add newer functions for games that require them. This will only affect OpenGl games"
-HKR,Glide,FX_GL_VERSION,,"1.1"
+HKR,Glide\"OpenGL Version","Help",,"OpenGL version the 3dfx ICD reports and supports. 1.1 is the original and the fastest. 1.2 is the default. 1.2 to 1.5 add newer functions for games that require them. This will only affect OpenGl games"
+HKR,Glide,FX_GL_VERSION,,"1.2"
 
 
 [3dfxTools_Voodoo6]
@@ -1255,7 +1257,7 @@ HKR,Glide,FX_GLIDE_V3FIFO,,"1"
 ;Default board set
 ;HKR,Glide,FX_GLIDE_SST_PRIMARY,,"0"
 [Strings]
-Mfg="3dfx Wide Driver 1.5"
+Mfg="3dfx Wide Driver 1.6"
 IN_USE="0x00010000"
 NO_DIALOG="0x00000020"
 ;No version Check (0x4) and Force in use (0x8)

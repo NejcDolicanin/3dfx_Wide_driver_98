@@ -5,8 +5,8 @@ Version 1.6
 Voodoo Series Driver Kit:			1.0
 Voodoo Series Win9x 2D/3D Display Drivers:	4.13.01.0028
 Glide 2.X Driver:				1.00.01.0107		(glide2->glide3 wrapper)
-Glide 3.X Driver:				3.10.00.40408		(Glide sourceForge project)
-OpenGL Driver Version:			3dfx OpenGL RE-ICD		(v0.76)	(OpenGL ICD)
+Glide 3.X Driver:				3.10.00.40409		(Glide sourceForge project)
+OpenGL Driver Version:			3dfx OpenGL RE-ICD		(v1.0.0.0762)
 **************************************************************************************************************************************
 
 Release Notes
@@ -37,7 +37,6 @@ Version 1.5
   - Driver (Retail + 2.1 patch + 2.1 fix)
   - Diablo II retail + LOD expansion + patch v1.13d
   - Additional HOR+ patched .exe for Aliens vs Predator Gold
-
 
 Release Notes
 =======================================================================
